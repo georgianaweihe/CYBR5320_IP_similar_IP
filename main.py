@@ -26,14 +26,11 @@ for index, row in my_df.iterrows():
     src_ip = row.loc["src"] #call the source IP
     for name in feature_names: 
         feature = row.loc[name]
-        print("feature is ",feature)
         if src_ip not in my_dict: #if the IP is new, create an empty dictionary 
             my_dict[src_ip] = {}
         if name not in my_dict[src_ip]: #if the IP exists in the dict, create an array for the feature
             my_dict[src_ip][name] = []
         my_dict[src_ip][name].append(feature)
-        print("for source IP "+src_ip+" and feature "+name)
-        print(my_dict[src_ip][name])
 
 # create a dictionary of ten arrays (key value = feature name)
 dict_of_numpyarrays = {}
