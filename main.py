@@ -54,3 +54,6 @@ for name in feature_names:
             # Translating from ip address to integer identifier
             ip2_int = ip2int[ip2]
             dict_of_numpyarrays[name][ip1_int][ip2_int] = score
+            print(score)
+            
+            #if score [[??]] then [[??]]
