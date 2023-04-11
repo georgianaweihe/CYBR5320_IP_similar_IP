@@ -56,4 +56,5 @@ for name in feature_names:
             dict_of_numpyarrays[name][ip1_int][ip2_int] = score
             print(score)
             
-            #if score [[??]] then [[??]]
+for name in dict_of_numpyarrays:
+    np.savetxt(name + ".txt", dict_of_numpyarrays[name])
