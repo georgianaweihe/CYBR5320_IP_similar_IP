@@ -57,4 +57,4 @@ for name in feature_names:
             print(score)
             
 for name in dict_of_numpyarrays:
-    np.savetxt(name + ".txt", dict_of_numpyarrays[name])
+    np.savetxt(name + ".txt", dict_of_numpyarrays[name], fmt='%.5f', delimiter=',')
